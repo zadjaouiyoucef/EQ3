@@ -1,0 +1,115 @@
+body {
+    background-color: #306090; /* fond couleur bleu hex */
+    color: #ffffff; /* couleur du texte : blanc */
+    font-family: "Trebuchet MS", Verdana, Geneva, Arial, Helvetica, sans-serif; /* police par ordre de préference */
+    font-size: small; /* taille de la police : petite */
+    margin: 0; /* Changé à 0 pour coller la barre tout en haut */
+    padding: 0; /* supprime les espaces du corps */
+}
+
+/* --- LE NOUVEAU STYLE DES BOUTONS EN HAUT --- */
+.barre-boutons {
+    display: flex;
+    justify-content: center; /* Centre les boutons horizontalement */
+    gap: 15px; /* Espace entre les boutons */
+    background-color: rgba(48, 96, 144, 0.85); /* Fond bleu légèrement transparent */
+    padding: 12px 0; /* Espace haut/bas de la barre */
+    width: 100%;
+}
+
+.btn-haut {
+    display: inline-block;
+    background-color: #ffd000; /* Jaune assorti à votre bandeau */
+    color: #306090; /* Texte bleu pour le contraste */
+    padding: 8px 16px; /* Taille du bouton */
+    text-decoration: none; /* Supprime le soulignement */
+    font-weight: bold; /* Texte en gras */
+    border-radius: 5px; /* Coins légèrement arrondis */
+    transition: background 0.2s, transform 0.1s;
+}
+
+    .btn-haut:hover {
+        background-color: #e0b800; /* Jaune plus foncé au survol */
+        transform: scale(1.05); /* Léger effet de zoom au survol */
+    }
+/* --------------------------------------------- */
+
+html > body #page {
+    height: auto;
+    padding-top: 10px; /* Évite que le header colle trop à la barre */
+}
+
+header {
+    margin: 1em 3% 1% 3%; /* marge extérieurs : haut droite bas gauche */
+    padding: 0.05em 0 0.05em 0; /* espace intérieur : haut droite bas gauche */
+    font-size: 200%; /* double la taille du texte */
+    background-color: #ffd000; /* fond couleur : jaune */
+    border-radius: 25px; /* arrondi les coins */
+}
+
+    header h1 {
+        font-family: "Comic Sans MS", Arial, Helvetica, sans-serif;
+        text-align: center; /* recentre le titre */
+    }
+
+    header .logo {
+        float: left; /* logo a gauche */
+        margin-top: 20px; /* espace en haut */
+        margin-bottom: 5px; /* espace en bas */
+        margin-left: 1%; /* espace a gauche */
+        display: block; /* logo en bloc */
+    }
+
+body {
+    background-image: url("https://th.bing.com/th/id/R.b47571a9fda883d3d4a5e487ae3f021c?rik=l58CbjowQV5HNQ&riu=http%3a%2f%2fevasion-online.com%2fRecupImgArticles%2fvoyage%2bphotos%2f2048x1463-seychelles.jpg&ehk=Fi0JyfmOn%2buxRyAFVAU375atQLsZPBsPPiseVmh5vNQ%3d&risl=&pid=ImgRaw&r=0");
+    background-attachment: fixed; /* L'image de fond reste fixe pendant le défilement */
+    background-size: cover; /* L'image prend tout l'écran */
+}
+
+/* menu de gauche */
+nav {
+    left: 5%;
+    position: absolute;
+    width: 15%;
+    overflow: hidden;
+}
+
+article {
+    background-color: #f5f8fc; /* fond couleur : bleu clair */
+    border: 1px solid #6090c0; /* bord couleur : bleu */
+    line-height: 150%; /* lignes plus espacées */
+    margin: 0 3% 2em 21%; /* espace autour */
+    padding: 0 2% 3em 2%; /* espace dedans */
+    color: #000000; /* texte couleur : noir */
+}
+
+nav h3 {
+    border-color: #f09000; /* couleur bordure orange */
+    border-style: solid;
+    border-width: 0 0 3px 0; /* trait en bas */
+    font-size: medium;
+    font-weight: bold;
+    margin: 0;
+    padding-left: 0em;
+    text-transform: uppercase;
+}
+
+nav ul {
+    margin-bottom: 1.5em;
+    margin-top: 0.5em;
+}
+
+nav li {
+    list-style: none;
+}
+
+article h2 {
+    color: #306090;
+    font-size: 1.5em;
+    border-bottom: 2px solid #f09000;
+    padding-bottom: 0.3em;
+}
+
+nav a {
+    display: block;
+}
